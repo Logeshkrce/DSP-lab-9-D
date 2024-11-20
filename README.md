@@ -1,1 +1,22 @@
 # DSP-lab-9-D
+mmregs
+
+.text
+
+START:
+
+LD #00H,A
+
+STM #1000H,AR4
+
+STM #2000H,AR5
+
+STM #3000H,AR6
+
+LD *AR4,A
+
+ADD *AR5,A
+
+STL A,*AR6+
+
+HLT:
